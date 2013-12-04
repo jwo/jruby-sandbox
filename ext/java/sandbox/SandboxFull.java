@@ -36,7 +36,7 @@ public class SandboxFull extends RubyObject {
 
   @JRubyMethod
   public RubyString getStdOut() {
-    return wrapped.newString(stdOut.toString());
+    return getRuntime().newString(stdOut.toString());
   }
 
   @JRubyMethod
